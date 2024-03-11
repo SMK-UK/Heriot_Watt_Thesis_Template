@@ -2,20 +2,22 @@
 %% This Source Code Form is subject to the terms of the MIT License. 
 %% If a copy of the MIT was not distributed with this file, You can obtain one at https://opensource.org/licenses/mit
 %%
-%% Last update: 2021/07/12
+%% Last update: 2024/03/11
 %% 
 %% author: Dorian Gouzou <jackred@tuta.io>
 %% repository hosted on github at https://github.com/jackred/Heriot_Watt_Thesis_Template
 %%%%
 \documentclass[12pt,a4paper]{report}
 
-\include{I-packages}
-\include{I-config}
-\include{I-info}
-\include{I-glossary}
-\include{I-packages-2} % some package need to be loaded last in preamble
+\input{I-packages}
+\input{I-config}
+\input{I-info}
+\input{I-glossary}
+\input{I-packages-2} % some package need to be loaded last in preamble
 
 \begin{document}
+
+\dominitoc
 
 \pagestyle{empty}
 \input{Preliminaries/1-titlepages}
@@ -113,3 +115,4 @@
 \end{refsection}
 
 \end{document}
+

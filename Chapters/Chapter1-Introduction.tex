@@ -4,11 +4,22 @@
 
 \chapter{Introduction}
 \chaptermark{Chapter 1 title} % optional for veryy long chapter, you can rename what appear in the header
-\section{Start}
-\subsection{Basic info}
-I studied \autocite{C01} and that was fun. I also looked at \autocite{C02} \footnote{you should do footnotes like this. More details here \url{https://www.overleaf.com/learn/latex/Footnotes}}.
 
-I also wrote this \autocite{C05}
+{
+\hypersetup{linkcolor=black}
+\minitoc
+}
+%% have a mini table of content at the start of the chapter
+
+\section{Start}
+\subsection{Basic Info}
+\subsubsection{This Is A Subsubsection}
+Subsubsection should not be numbered, nor indicated in the table of contents. The config options are tocdepth and secnumdepth, you can find them in the config file. 
+
+\paragraph{Paragraph Title}
+I studied \cite{C08} and that was fun. I also looked at \cite{C02} \footnote{you should do footnotes like this. More details here \url{https://www.overleaf.com/learn/latex/Footnotes}}.
+
+I also wrote this \cite{C05}. But the most fun thing was reading \cite{C01}
 
 URI should be included like this \url{https://github.com/jackred/Heriot_Watt_Thesis_Template}.
 
@@ -90,5 +101,16 @@ I placed my figure right after the text, but you will usually use other option t
     \caption[Sideways picture]{How to put a very big picture sideways. It is in French but who cares?} 
     \label{fig:veryBigFigure} 
 \end{figure}
+
+
+\begin{landscape}
+\begin{figure}[!h]
+    \centering
+    \includegraphics[width=\linewidth]{Figures/rk4_0-100_dt-0-0001}
+    \caption{How to put a figure in landscape instead}
+    \label{fig:verybigfigure2}
+\end{figure}
+\end{landscape}
+
 
 \end{document}
