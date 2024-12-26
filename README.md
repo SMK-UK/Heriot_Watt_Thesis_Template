@@ -1,5 +1,5 @@
 # Heriot_Watt_Thesis_Template
-A template for LaTeX. Should be following the guidelines for the submission of a thesis at Heriot-Watt University.  
+This template follows the guidelines for thesis submission at Heriot-Watt University. 
 
 ## Copyright/Licensing
 This template is licensed under the MIT License. You can use it, modify it, distribute it, as long as the License and Copyright notice are included. You don't need to provide the copyright notice in the pdf version of your thesis. However if you provide or make public the latex version, please include it. The License limitations includes liability and warranty.  
@@ -7,7 +7,7 @@ This template is licensed under the MIT License. You can use it, modify it, dist
 MIT is softer than the lppl or whatever other License you can find, hence my use of it.
 
 ## Disclaimer
-Any word missing or other type of error should be attributed to my lack of attention and my absence of motivation about reading everything twice.  
+Any missing word(s) or other type of error should be attributed to my lack of attention and my absence of motivation about reading everything twice.  
 
 ## Implementation
 I tried to follow the guideline as much as possible, here is what I made:
@@ -28,7 +28,6 @@ I tried to follow the guideline as much as possible, here is what I made:
 - List of reference and Bibliography (or further reading) using biblatex
 
 ## Modifications
-
 There is probably some modifications to the Template itself you want to make. I'll try to list a few I thought of.
 
 ### Contributing 
@@ -40,6 +39,9 @@ You will find some comment in the Template. It is often there to change some par
 - Some part of the title page I don't think are necessary
 
 It also works the other way, part such as the List of Figures, List of Publications, Bibliography, etc are optional and can be commented.  
+
+### TOC and minitoc
+I opted to compile this in vscode and ran into some issues where the 'minitoc' and 'titlesec' packages are not compatible. The 'etoc' package still works with 'titlesec' and provides some better customization and memory options. For more details, you can visit the [etoc package page](https://ctan.org/tex-archive/macros/latex/contrib/etoc?lang=en).
 
 ### Heading
 I followed the guidelines regarding the heading size, which makes them way smaller than the default LaTeX style and also less noticeable. This can be changed in the `I-config.tex` files. Line 57-59 define the constant defining the size of the headder. The baseline is automatically computed. The style itself can be changed in the next part, starting line 69.
